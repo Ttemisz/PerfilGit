@@ -7,7 +7,10 @@ function Feedback() {
     return (
       <>
         <Feedbackfundo>
-            Nenhum perfil foi encontrado com esse nome de usuario <hr />Tente novamente
+          <div>
+          Nenhum perfil foi encontrado com esse nome de usuario. <br />Tente novamente
+          </div>
+            
         </Feedbackfundo>
       </>
     )

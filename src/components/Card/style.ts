@@ -1,7 +1,7 @@
 import  styled  from "styled-components";
 
 export const Fundo = styled.div`
-    width: 800px;
+    width: 820px;
     height: 264px;
     padding: 16px 16px 16px 32px;
     
@@ -25,20 +25,20 @@ export const Fundo = styled.div`
 export const Imagem = styled.img`
     height: 234px;
     object-fit: cover;
-    border: 2px solid #005cff;
+    
     border-radius:150px;
 `
 
 export const Nome = styled.div`
     font-size: 16px;
-    color:#005cff;
-     margin-top:54px;
+    color:#14b86c;
+     margin-top:62px;
 `
 
 export const Descricao = styled.div`
 
     margin-top:16px;
-    font-size: 14px;
+    font-size: 16px;
     max-width:440px
    
 `

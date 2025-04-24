@@ -1,17 +1,18 @@
-import { Letreiro } from "./style"
+import { Github, Letreiro, Logo } from "./style"
 
 function Titulo() {
 
     return(
         <>
             <Letreiro>
-                <img src="/github-mark-white.png" alt="" />
+                <Logo src="/github-mark-white.png" alt="" />
                 <div>
-                    Perfil
+                    Perfi
                     <span>
-                        GitHub
+                        
                     </span>
                 </div>
+                <Github id="Github" src="GitHub_Wordmark_Light.png" alt="" />
             </Letreiro>
         </>
     )

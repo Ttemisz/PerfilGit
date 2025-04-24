@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const BarraPesquisa = styled.div`
-    width:500px;
+    width:520px;
     height:60px;
     display:flex;
     justify-content:space-between;
@@ -20,7 +20,7 @@ export const Entrada = styled.input`
     border:none;
 
     ::placeholder{
-
+        
     }
 
     &:focus {
