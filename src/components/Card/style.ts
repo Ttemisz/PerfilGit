@@ -31,16 +31,16 @@ export const Imagem = styled.img`
 `
 
 export const Nome = styled.div`
-    font-size: 14px;
+    font-size: 13px;
     color:#005cff;
-    margin-top:55px;
+    margin-top:52px;
 `
 
 export const Descricao = styled.div`
 
     margin-top:16px;
-    font-size: 15px;
-    max-width:440px;
+    font-size: 14.8px;
+    max-width:480px;
    
 `
 
