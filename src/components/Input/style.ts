@@ -11,6 +11,7 @@ export const BarraPesquisa = styled.div`
     background-color:#FFF;
     padding-left:20px;
    
+   
 `
 
 export const Entrada = styled.input`

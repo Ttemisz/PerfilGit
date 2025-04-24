@@ -1,28 +1,45 @@
 import  styled  from "styled-components";
 
 export const Fundo = styled.div`
-    width: 300px;
-    height: 400px;
-    padding: 16px;
-    border-radius: 12px;
+    width: 800px;
+    height: 264px;
+    padding: 16px 16px 16px 32px;
+    
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color:blue;
+    background-color:#d9d9d9;
+    display:flex;
+    align-items:flex-start;
+    
+    div{
+       
+        display:flex;
+        flex-direction:column;
+        
+        margin-left:15px;
+        justify-content:space-between;
+    }
 
 `
 
 export const Imagem = styled.img`
-    height: 180px;
+    height: 234px;
     object-fit: cover;
+    border: 2px solid #005cff;
+    border-radius:150px;
 `
 
 export const Nome = styled.div`
-    font-size: 18px;
-    margin-top: 12px;
+    font-size: 16px;
+    color:#005cff;
+     margin-top:54px;
 `
 
 export const Descricao = styled.div`
 
+    margin-top:16px;
     font-size: 14px;
-    margin: 8px 0;
+    max-width:440px
+   
 `
 
