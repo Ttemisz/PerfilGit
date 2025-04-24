@@ -11,12 +11,12 @@ type InputProps = {
       <BarraPesquisa>
         <Entrada
           type="text"
-          placeholder="Digite um usuário do GitHub"
+          placeholder="Digite um usuário do Github"
           value={value}
           onChange={onChange}
         />
         <Botao onClick={onClick}>
-          <img src="lupa.png" alt="Buscar" />
+          <img src="lupabranca2.png" alt="Buscar" />
         </Botao>
       </BarraPesquisa>
     );

@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Container } from "../../style";
+
 import Card from "../Card";
 import Feedback from "../Feedback";
 import Input from "../Input";
-import { Fundo } from "./style";
+import { Fundo, FundoFundo, FundoFundoFundo } from "./style";
 import Spinner from "../spinner";
 import Titulo from "../Titulo";
+import Pontilhado from "../Pontilhado";
+
 
 
 function Home() {
@@ -13,7 +15,7 @@ function Home() {
   const [usuario, setUsuario] = useState({ nome: "", bio: "", foto: "" });
   const [erro, setErro] = useState(false);
   const [loading, setLoading] = useState(false);
-
+  
   const buscarUsuario = () => {
     setLoading(true); 
 
@@ -40,8 +42,10 @@ function Home() {
   };
 
   return (
-    <Fundo>
-
+    <FundoFundoFundo>
+      <FundoFundo>
+        <Pontilhado></Pontilhado>
+        <Fundo>
           <Titulo></Titulo>
           <Input
             value={entrada}
@@ -52,13 +56,19 @@ function Home() {
           {loading ? (
             <Spinner /> 
           ) : erro ? (
-            <Feedback />
-          ) : (
+            <>
+              <Feedback />
+              {setTimeout(() => setErro(false), 5000) }
+            </>
+          ) : usuario.nome ?(
             <Card nome={usuario.nome} bio={usuario.bio} avatar={usuario.foto} />
-          )}
-        
-
-    </Fundo>
+          ) : (
+            <></>
+          )}    
+        </Fundo>
+      </FundoFundo> 
+    </FundoFundoFundo>
+    
   );
 }
 
